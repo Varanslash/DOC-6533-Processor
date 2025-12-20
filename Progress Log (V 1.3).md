@@ -1,0 +1,9 @@
+So V 1.3 is finished...I'm pretty happy about it.
+
+The most major changes that came from it are the shift to something more C-like rather than assembly-like, and I like this direction quite a lot because it comes with problem solving in architecture, something I enjoy. Though it comes with a lot of caveats, I'm happy to have a solid architecture in the Double-Pass-Interrupt™, and it'll help greatly when making looping and conditionals. Only caveat is that more states may be needed as I progress.
+
+In the current proof-of-concept for A- (This is not a concrete name, I will accept suggestions!), nesting is (theoretically) supported, although nested functions are called automatically (no need for call unless you want things to break) and there's not a lot of backlog, as only the last state is saved. I think i can circumvent this with a stack.
+
+This ends the first progress log  of A-. These logs are where I will detail plans, pseudocode, Python, and generally my take and feelings on the project as I progress. Let's hope it doesn't die.
+
+Bye everyone!
