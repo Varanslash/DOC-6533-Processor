@@ -1,0 +1,61 @@
+1.6 is done! I got if/else/end statements working now!
+
+So I was able to get if/else/end working with no major changes to architecture. This is because I used the else as a splitter between if and end, and it worked really well! Each of them still have names attached for the purposes of identification, which is good for nesting. I'll work on a few other things such as while loops and possibly for loops, and some stuff like register to flag communication and vice versa, then I'll release a first stable version in 2.0 along with some documentation and maybe a website! Aren't you excited? I'm so excited!!!
+
+I also had GPT generate some example programs to test my architecture as well as me making some of my own (lost to time sadly), and I'll paste them here so you can try them out!
+
+% If statements
+[
+    "reg flag cond",
+    "set flag cond False",
+
+    "if cond test",
+        "prt if_branch",
+    "else cond test",
+        "prt else_branch",
+    "end if cond test",
+
+    "prt after_if"
+]
+
+% Function Test
+[
+    "prt start",
+
+    "call fn hello",
+
+    "prt back_in_main",
+
+    "fn hello",
+        "prt inside_function",
+    "end fn hello",
+
+    "prt end"
+]
+
+% Loop Test
+[
+    "reg flag run",
+    "set flag run True",
+
+    "var int counter",
+    "set var counter 3",
+
+    "loop main run 3",
+        "sprt loop_iteration",
+        "rprt counter",
+        "sub counter 1",
+    "end loop run main",
+
+    "prt done"
+]
+
+% Most complex program of all time
+[
+    "sprt hello",
+    "sprt world"
+]
+
+These lists go in a .animus file that goes in your Downloads folder and matches the filename in the virtual machine. The default is extprocessor, but you can change it to whatever you like!
+
+Anyway, that's the end of this log! Goodbye everyone, and I hope you have a lot of fun!
