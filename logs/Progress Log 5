@@ -1,0 +1,16 @@
+Not a major update this time, but I did make a converter that turns your program into a list, ready to use in your .animus.
+
+The code looks like this:
+code = """placeholder"""
+finalcode = []
+for line in code.split("\n"):
+    finalcode.append(line.strip())
+print(finalcode)
+
+Essentially, you put your code in the placeholder quotes, and let the converter do the rest of the magic! It works wonders!
+
+An example is in the extprocessor.aminus file --- it contains a list of a basic program that was converted into a list, it works well. Go ahead and try it!
+
+Goodbye everyone, I hope you have fun with the converter and the language! I'll be in the labs making more functionality so we can have actually good things.
+
+Love you all <3
