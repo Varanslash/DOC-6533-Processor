@@ -1,0 +1,36 @@
+While loops!
+
+While loops have been made! They do work fairly well! I used another test program written by GPT and fixed up by myself to actually work in-compiler. They work great, I used an indexer plugin in order to check. This indexer will be posted both here and in helpers, where it should be plugged in for tracking lines. I even have some new ideas for new, unique syntax, like node, array, and random jumps, reversing program order, register to flag connection, for loops for stacks and maybe banks, and probably even system control and file writing!
+
+As I am legally obligated to do, here is the code for while loops:
+            case ["while", "loop", name, flag]:
+                if flags[flag] == True:
+                    i += 1
+                else:
+                    i = wend[name] + 1
+            case ["end", "while", "loop", name, flag]:
+                if flags[flag] == True:
+                    i = wstart[name]
+                else:
+                    i += 1
+
+Example program: (it'll spam your computer)
+[
+"var int counter", 
+"set var counter 0", 
+"reg flag running", 
+"set flag running True", 
+"",
+"while loop count_loop running", 
+    "rprt counter", 
+    "add counter 1", 
+"end while loop count_loop running"
+]
+
+As I have promised, here are the debugger lines:
+print(f"Executing line {i}: {instr}")
+time.sleep(1)
+
+These are put at the tope of interpreter(), right after instr = program[i].
+
+I hope you have fun with the new 1.7! Goodbye everyone!
